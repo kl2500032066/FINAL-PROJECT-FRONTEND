@@ -1,39 +1,117 @@
-# AgriConnect - Farm-Direct Fresh Marketplace (Final Hackathon Edition)
+# AgriConnect – Farm-Direct Fresh Marketplace
 
-A clean, green-themed React + Vite application connecting **Admin**, **Sellers (Farmers)**, and **Buyers** with category-wise menus, transparent quality grading (`A`, `B`, `C`, `H`), an iPhone-inspired Liquid Glass category slider, pincode delivery verification, and realistic UPI QR / Card / Cash on Delivery checkout.
+A clean, green-themed React + Vite application connecting **Admins, Farmers (Sellers), and Buyers** through a farm-direct marketplace.
 
-## How to Run in VS Code
+AgriConnect includes category-wise product menus, transparent quality grading (A, B, C, H), an iPhone-inspired Liquid Glass category slider, pincode delivery verification, and UPI QR / Card / Cash on Delivery checkout options.
 
-1. Extract this ZIP archive.
-2. Open the `AgriConnect-React` folder in **VS Code**.
-3. Open **Terminal > New Terminal** (`Ctrl + \``).
-4. Install dependencies and start the development server:
+## Technologies Used
+
+- React.js
+- Vite
+- JavaScript
+- CSS
+- HTML
+
+## Installation and Setup
+
+1. Clone or download this repository.
+2. Open the `AgriConnect-React` folder in VS Code.
+3. Open the terminal.
+4. Install dependencies:
 
 ```bash
 npm install
+```
+
+5. Start the development server:
+
+```bash
 npm run dev
 ```
 
-5. Open the local Vite URL printed in the terminal (usually `http://localhost:5173`).
+6. Open the local URL displayed in the terminal, usually:
 
-## Demo Workflow for Hackathon Review
+```text
+http://localhost:5173
+```
 
-1. **Admin Login**:
-   - Click **Login / Sign Up** (or **Admin Console**), select the **Admin** tab, and log in with:
-     - **Username**: `admin@123`
-     - **Password**: `ADMIN@123`
-   - Go to **Menu Catalog** and add products into any of the 7 official categories (`Daily Fresh Fruits`, `Fresh Vegetables`, `Dairy Products`, `Cereals`, `Seeds`, `Spices`, `Others`). Real product photos are auto-matched (or you can paste any image URL).
+## Main Features
 
-2. **Seller (Farmer) Account & Listing**:
-   - Log out, open **Login / Sign Up**, select **Seller**, create an account, and log in.
-   - Select any Admin-added product by category, enter **Quantity**, choose **Grade** (`A`, `B`, `C`, or `H` for Hybrid), enter **Price**, and optionally add a **Description**.
-   - Leaving any required field blank highlights it in red with a **"Fill this"** notice.
+### 1. Admin Dashboard
+- Admin login.
+- Manage product catalog.
+- Add products to seven categories.
+- Manage marketplace products.
 
-3. **Buyer Account, Trending Banner, Cart & Payment**:
-   - Log out, open **Login / Sign Up**, select **Buyer**, create an account, and log in.
-   - View the **Trending Now** showcase banner (no Add-to-Cart clutter), slide categories on the **Liquid Glass** bar, or click any category in the **Right Category Sidebar** / **Left Menu** to open farmer listings.
-   - Add items to cart (live count badge animates over the Cart icon), enter delivery address, verify **any pincode** for instant delivery availability, and complete payment via **UPI (sample QR with payable price)**, **Card**, or **Cash on Delivery**.
+### 2. Farmer Dashboard
+- Farmer registration and login.
+- Select products by category.
+- Add product quantity and price.
+- Assign quality grades: A, B, C, and H.
+- Add product descriptions.
 
-4. **Order Notification & Automatic Stock Adjustment**:
-   - Both **Admin** and **Seller** receive the order notification.
-   - When the **Seller** clicks **Confirm Order**, the product's live stock quantity automatically deducts and syncs across the platform.
+### 3. Buyer Dashboard
+- Buyer registration and login.
+- Browse farmer products.
+- Category-wise product browsing.
+- Trending products showcase.
+- Shopping cart.
+- Delivery address and pincode verification.
+
+### 4. Payment Options
+- UPI QR payment interface.
+- Card payment interface.
+- Cash on Delivery.
+
+### 5. Order Management
+- Order notifications for Admin and Farmers.
+- Farmer order confirmation.
+- Automatic stock deduction after order confirmation.
+
+## Product Categories
+
+1. Daily Fresh Fruits
+2. Fresh Vegetables
+3. Dairy Products
+4. Cereals
+5. Seeds
+6. Spices
+7. Others
+
+## Demo Admin Credentials
+
+**Username:** `admin@123`
+
+**Password:** `ADMIN@123`
+
+*Use these demo credentials only in the local demonstration environment.*
+
+## Project Structure
+
+```text
+AgriConnect-React/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── data.js
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## Project Objective
+
+AgriConnect aims to connect farmers directly with buyers, improve transparency in agricultural product quality and pricing, and provide a convenient digital marketplace for fresh agricultural products.
+
+---
+
+**Project:** AgriConnect – Farm-Direct Fresh Marketplace  
+**Repository:** FINAL-PROJECT-FRONTEND
